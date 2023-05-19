@@ -2,5 +2,5 @@
 book = {}
 # book = dict()
 book['mostafa'] = 23
-book['address'] = "some where"
+book['address'] = "somewhere"
 print(book)

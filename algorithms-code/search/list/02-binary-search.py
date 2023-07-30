@@ -1,3 +1,5 @@
+# complexity :  O(log n)
+
 def binary_search(list, target):
     left = 0
     right = len(list) - 1

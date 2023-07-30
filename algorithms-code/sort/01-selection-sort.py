@@ -1,3 +1,5 @@
+# complexity :  O(n^2)
+
 def find_smallest_index(arr):
     smallest_item = arr[0]
     smallest_index = 0
@@ -15,5 +17,7 @@ def selection_sort(arr):
         newArr.append(arr.pop(smallest_index))
     return newArr
 
+arr = [3,5,9,6,9,99,44,1,2,2]
+sorted_arr = selection_sort(arr)
 
-print(selection_sort([3,5,9,6,9,99,44,1,2,2]))
+print(sorted_arr)

@@ -10,4 +10,4 @@ def linear_search(arr, target):
 arr = [1, 2, 5, 8, 9, 11, 12, 6]
 target = 9
 
-print(f'index of target= {linear_search(arr, target)}')
+print(f'index of target = {linear_search(arr, target)}')

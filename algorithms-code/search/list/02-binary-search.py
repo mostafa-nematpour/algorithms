@@ -1,4 +1,4 @@
-def binary_search(list, item):
+def binary_search(list, target):
     left = 0
     right = len(list) - 1
 
@@ -6,9 +6,9 @@ def binary_search(list, item):
         middle = (left + right) // 2
         guess = list[middle]
 
-        if guess == item:
+        if guess == target:
             return middle
-        if guess > item:
+        if guess > target:
             right = middle - 1
         else:
             left = middle + 1
@@ -16,8 +16,9 @@ def binary_search(list, item):
     return None
 
 
-first_list = [1, 2, 3, 5, 6, 8, 7, 9]
+list = [1, 2, 3, 5, 6, 8, 7, 9] # list must be sorted (asc)
+target = 5
 
-answer = binary_search(first_list, 5)
+answer = binary_search(list, target)
 
-print(answer)
+print(f'index of target = {answer}')

@@ -1,5 +1,7 @@
-from collections import deque
+# complexity :  O(V+E)
+# the number of vertices is O(V), whereas the number of edges is O(E).
 
+from collections import deque
 
 def node_is_target(node):
     return node[-1] == 'x'
